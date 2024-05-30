@@ -1,0 +1,326 @@
+*{
+top: 0px;
+left: 0px;
+}
+
+body{
+    background-color: #F6F7F8 ;
+    height: 100%;
+    overflow-y: hidden;
+    
+}
+
+.navui{
+display: flex;
+align-items: center;
+justify-content: space-between;
+top: 18px;
+left: 18px;
+height: 60px;
+background: #FFFFFF;
+border-radius: 70px;
+width: 100%;
+}
+
+.test{
+    display: flex;
+    align-items: center;
+}
+
+.test1{
+    background-color: #01F0D0;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    width: 130px;
+    height: 40px;
+    margin-top: 8px;
+}
+
+.imgnav{
+   padding-left: 20px;
+
+}
+
+.test1 p{
+    padding-left: 10px;
+}
+
+.test p{
+    padding-left: 10px;
+}
+
+.navleftimg{
+   
+    width: 211px;
+    padding-left: 30px;
+  
+}
+
+.mega{
+    display: flex;
+    gap: 20px;
+    
+}
+
+.right{
+    display: flex;
+    
+}
+.righttext p{
+    margin-left: 20px;
+    
+}
+
+.imgright{
+    padding-top: 12px;
+    height: 44px;
+    width: 44px;
+}
+
+.righttext{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.iconright{
+    height: 25px;
+    width: 25px;
+}
+
+.iconlast{
+    padding-right: 10px;
+    height:20px;
+    width:20px;
+}
+
+
+/*  */
+.container {
+    display: flex;
+   
+    padding-top: 20px;
+    overflow: scroll;
+    overflow-y: scroll; /* Show vertical scrollbar */
+    overflow-x: scroll; /* Show horizontal scrollbar */
+}
+
+.sidebar {
+    width: 367px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.patient-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.patient {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.patient img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.patient-info{
+    flex: 1;
+}
+
+.patient-info p {
+    margin: 5px 0;
+}
+
+.main-content {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.lefttop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.profile-menu{
+    width: 18px;
+    height: 4px;
+}
+
+
+/* right side profile */
+
+.patient-details {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding-left: 100px;
+    padding-top: 30px;
+    width: 367px;
+    height: 60%;
+    margin-left: auto; 
+}
+
+
+.patient-details .details {
+    display: flex;
+    flex-direction: column;
+}
+
+.patient-details .details p {
+    margin: 5px 0;
+}
+
+.patient-details button {
+    background: #00C8B5;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.profile-details{
+    
+    align-items:flex-start;
+    padding-left: 10px;
+}
+
+/* <!DOCTYPE html> */
+
+
+.mainprofile{
+    padding-top: 10px;
+}
+.profile-container {
+  float: right;
+  background-color: #fff;
+  border-radius: 12px;
+  margin: auto;
+  padding: 30px;
+  width: 320px;
+  height: 500px;
+}
+.profile-container img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+.profile-container h2{
+    text-align: center;
+}
+
+.info-icon {
+  font-size: 24px;
+  color: #333;
+  margin-right: 10px;
+}
+
+.info-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.info-value {
+  color: #555;
+}
+
+.icon {
+    display: flex;
+}
+
+.icon img {
+    width: 40px; 
+    height: 40px; 
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.label {
+    font: normal normal medium 14px/19px Manrope;
+    color: grey;
+    font-size: small;
+}
+
+.date {
+    margin-top: 4px; 
+    font: normal normal bold 14px/19px Manrope;
+    font-size: small;
+}
+
+
+.container1 {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.profile-button{
+    width: 220px;
+    height: 41px;
+    background-color:#01F0D0;
+    border: none;
+    border-radius: 41px;
+    margin-top: 35px;
+    left: 50%;
+}
+
+.button {
+  text-align: center;
+}
+
+
+.profile-container2{
+  float: right;
+  clear: right;
+  background-color: #fff;
+  border-radius: 12px;
+  margin: auto;
+  padding: 30px;
+  padding-top: 0px;
+  width: 320px;
+  height: 100px;
+  margin-top: 10px;
+  overflow: scroll;
+}
+  
+.profile-container2 h3{
+    padding-top: 10px;
+    font-style: bold;
+}
+
+.lab-results{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.lab-results img{
+    height: 15px;
+    width: 15px;
+}
+
+
+
+
+
+

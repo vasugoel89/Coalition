@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   </head>
   <body>
     <nav class="navui">
@@ -154,6 +157,88 @@
             </div>
         </div>
 
+
+        <!-- center part -->
+        <div class="center">
+            <h3>Diagnosis History</h3>
+        <div class="container-center">
+            <div class="chart-section">
+                <div class="chart-header">
+                    <h1>Blood Pressure</h1>
+                    <div class="timeframe">Last 6 months ▼</div>
+                </div>
+                <canvas id="bloodPressureChart"></canvas>
+            </div>
+            <div class="info-section">
+                <div class="chart-info">
+                    <div class="info-item">
+                        <div class="info-label">
+                            <span class="legend-color systolic-color"></span> Systolic
+                        </div>
+                        <div class="info-value">160</div>
+                        <div class="info-status">▲ Higher than Average</div>
+                    </div>
+                    <div class="partition-line"></div>
+                    <div class="info-item">
+                        <div class="info-label">
+                            <span class="legend-color diastolic-color"></span> Diastolic
+                        </div>
+                        <div class="info-value">78</div>
+                        <div class="info-status">▼ Lower than Average</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center-bottom1">
+            <div class="center-bottom" id="first-color">
+                <img src="img/respiratory rate@2x.png" alt="">
+                <p>Respiratory Rate</p>
+                <h2>20 bpm</h2>
+                <h5>Normal</h5>
+            </div>
+            <div class="center-bottom" id="second-color">
+                <img src="img/temperature.png" alt="">
+                <p>Temperature</p>
+                <h2>98.6°F</h2>
+                <h5>Normal</h5>
+            </div>
+            <div class="center-bottom" id="third-color">
+                <img src="img/HeartBPM.png" alt="">
+                <p>Heart Rate</p>
+                <h2>78 bpm</h2>
+                <h5>Lower than Average</h5>
+            </div>
+        </div>
+        <div class="center-second">
+            <h3>Diagnostic List</h3>
+            <div class="table-container">
+                <div class="table-header">
+                    <div class="header-item">Problem/Diagnosis</div>
+                    <div class="header-item">Description</div>
+                    <div class="header-item">Status</div>
+                </div>
+                <div class="table-body">
+                    <div class="table-row">
+                        <div class="table-cell">Hypertension</div>
+                        <div class="table-cell">Chronic high blood pressure</div>
+                        <div class="table-cell">Under Observation</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Type 2 Diabetes</div>
+                        <div class="table-cell">Insulin resistance and elevated blood sugar</div>
+                        <div class="table-cell">Cured</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Asthma</div>
+                        <div class="table-cell">Recurrent episodes of bronchial constriction</div>
+                        <div class="table-cell">Inactive</div>
+                    </div>
+                    <!-- Add more rows as needed -->
+                </div>
+            </div>
+        </div>
+        </div>
+
         <!-- Right side profile -->
         <div class="mainprofile">
         <div class="profile-container">
@@ -235,7 +320,12 @@
         </div>
         </div>   
     </div>
+    <div id="loading">
+        <p>Loading...</p>
+    </div>
+      <div id="data"></div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
 
-        
   </body>
 </html>
